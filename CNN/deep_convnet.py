@@ -71,7 +71,7 @@ class DeepConvNet:
         
         self.last_layer = SoftmaxWithLoss()
 
-        #我编写的一部分，用于my.py文件中，输出前1000个测试图像中cnn识别错误的图像,下面accuracy中还有一部分
+        #用于my.py文件中，输出前1000个测试图像中cnn识别错误的图像
         self.t=None
         self.y=None
         #
@@ -100,7 +100,7 @@ class DeepConvNet:
             y = np.argmax(y, axis=1)
             acc += np.sum(y == tt)
 
-        #我编写的一部分，用于my.py文件中，输出前1000个测试图像中cnn识别错误的图像
+        #用于my.py文件中，输出前1000个测试图像中cnn识别错误的图像
         self.t=t
         self.y=y
         #
